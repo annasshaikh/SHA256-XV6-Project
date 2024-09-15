@@ -7,6 +7,13 @@
 #include "proc.h"
 
 uint64
+
+sys_getcallcount(void)
+{
+  return myproc()->Systemcall_counter;
+}
+
+uint64
 sys_exit(void)
 {
   int n;

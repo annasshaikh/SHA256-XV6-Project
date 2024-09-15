@@ -122,6 +122,9 @@ allocproc(void)
   return 0;
 
 found:
+  
+  p->Systemcall_counter = 0; // Inistallize the call counter to zero
+
   p->pid = allocpid();
   p->state = USED;
 
