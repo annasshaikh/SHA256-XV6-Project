@@ -141,6 +141,7 @@ UPROGS=\
 	$U/_zombie\
 	$U/_Myprog\
 	$U/_PingPong\
+	$U/_runpipe\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)

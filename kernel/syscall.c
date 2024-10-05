@@ -138,9 +138,10 @@ syscall(void)
   int num;
   struct proc *p = myproc();
   call_count++;
+  
   p->Systemcall_counter = call_count; // increment whenever the call was made
-
   num = p->trapframe->a7;
+  
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
     // Use num to lookup the system call function for num, call it,
     // and store its return value in p->trapframe->a0
