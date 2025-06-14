@@ -1,4 +1,4 @@
-```markdown
+
 # SHA-256 Implementation in XV6
 
 ## Description
