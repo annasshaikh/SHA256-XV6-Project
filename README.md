@@ -5,6 +5,8 @@
 
 This project presents the implementation of the SHA-256 cryptographic hash algorithm in both user space and kernel space within the XV6 operating system. It includes the creation of a system call for efficient user-kernel interaction. The user space implementation emphasizes modularity for application-level use, while the kernel-space integration ensures secure and efficient processing of sensitive data. The system call bridges these implementations, enabling user space programs to utilize kernel-level functionality. This work also highlights and addresses limitations such as XV6 page limitations and includes utilities for unit testing and runtime analysis. [1 (Abstract)]
 
+
+## Paper: https://drive.google.com/file/d/17obwYcJcpxZlhPvp1NSkNVw5yec2_nSa/view?usp=sharing
 ## Features
 
 *   **SHA-256 Algorithm:** Implements the full SHA-256 hashing process, including padding, message scheduling, and 64 rounds of computation. [1 (I, II, A, B, C, E), 2 (E)]
